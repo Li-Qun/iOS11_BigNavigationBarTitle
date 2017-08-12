@@ -1,0 +1,6 @@
+framework module Pods_iOS11_BigNavTitleDemo {
+  umbrella header "Pods-iOS11_BigNavTitleDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

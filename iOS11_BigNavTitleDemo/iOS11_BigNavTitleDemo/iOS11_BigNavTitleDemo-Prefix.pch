@@ -1,0 +1,17 @@
+//
+//  iOS11_BigNavTitleDemo-Prefix.pch
+//  iOS11_BigNavTitleDemo
+//
+//  Created by HF on 2017/8/12.
+//  Copyright © 2017年 HF-Liqun. All rights reserved.
+//
+
+#ifndef iOS11_BigNavTitleDemo_Prefix_pch
+#define iOS11_BigNavTitleDemo_Prefix_pch
+
+
+#define kSCreenScale  [UIScreen mainScreen].scale
+#import "Masonry.h"
+#import "UIView+GoAdd.h"
+
+#endif /* iOS11_BigNavTitleDemo_Prefix_pch */

@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53C2223B0AD29990DC6F199D /* Pods_iOS11_BigNavTitleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6CAA856DEBBE9540301B8C /* Pods_iOS11_BigNavTitleDemo.framework */; };
+		A73C5C581F3F18AD000760C8 /* HFDynamicBigTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5C4E1F3F18AD000760C8 /* HFDynamicBigTitleView.m */; };
+		A73C5C591F3F18AD000760C8 /* HFDynamicNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5C501F3F18AD000760C8 /* HFDynamicNavView.m */; };
+		A73C5C5A1F3F18AD000760C8 /* HFNormalNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5C521F3F18AD000760C8 /* HFNormalNavView.m */; };
+		A73C5C5B1F3F18AD000760C8 /* UIView+GoAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5C551F3F18AD000760C8 /* UIView+GoAdd.m */; };
+		A73C5C5C1F3F18AD000760C8 /* UIViewController+HFDynamicBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5C571F3F18AD000760C8 /* UIViewController+HFDynamicBar.m */; };
+		A778E57C1F3F110200811F76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A778E57B1F3F110200811F76 /* AppDelegate.m */; };
+		A778E57F1F3F110200811F76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A778E57E1F3F110200811F76 /* ViewController.m */; };
+		A778E5821F3F110300811F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778E5801F3F110300811F76 /* Main.storyboard */; };
+		A778E5841F3F110300811F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A778E5831F3F110300811F76 /* Assets.xcassets */; };
+		A778E5871F3F110300811F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778E5851F3F110300811F76 /* LaunchScreen.storyboard */; };
+		A778E58A1F3F110300811F76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A778E5891F3F110300811F76 /* main.m */; };
+		A778E5A01F3F14C700811F76 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A778E59F1F3F14C700811F76 /* FirstViewController.m */; };
+		A778E5A31F3F14D600811F76 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A778E5A21F3F14D600811F76 /* SecondViewController.m */; };
+		A778E5A61F3F14E200811F76 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A778E5A51F3F14E200811F76 /* ThirdViewController.m */; };
+		A778E5A91F3F1B5300811F76 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A778E5A81F3F1B5300811F76 /* FourViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FC095EFCBC5FC0B95DC8AD6 /* Pods-iOS11_BigNavTitleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS11_BigNavTitleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS11_BigNavTitleDemo/Pods-iOS11_BigNavTitleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		31D053D35E64659891A53F9D /* Pods-iOS11_BigNavTitleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS11_BigNavTitleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS11_BigNavTitleDemo/Pods-iOS11_BigNavTitleDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5B6CAA856DEBBE9540301B8C /* Pods_iOS11_BigNavTitleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS11_BigNavTitleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73C5C4D1F3F18AD000760C8 /* HFDynamicBigTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDynamicBigTitleView.h; sourceTree = "<group>"; };
+		A73C5C4E1F3F18AD000760C8 /* HFDynamicBigTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDynamicBigTitleView.m; sourceTree = "<group>"; };
+		A73C5C4F1F3F18AD000760C8 /* HFDynamicNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFDynamicNavView.h; sourceTree = "<group>"; };
+		A73C5C501F3F18AD000760C8 /* HFDynamicNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFDynamicNavView.m; sourceTree = "<group>"; };
+		A73C5C511F3F18AD000760C8 /* HFNormalNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFNormalNavView.h; sourceTree = "<group>"; };
+		A73C5C521F3F18AD000760C8 /* HFNormalNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFNormalNavView.m; sourceTree = "<group>"; };
+		A73C5C541F3F18AD000760C8 /* UIView+GoAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GoAdd.h"; sourceTree = "<group>"; };
+		A73C5C551F3F18AD000760C8 /* UIView+GoAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GoAdd.m"; sourceTree = "<group>"; };
+		A73C5C561F3F18AD000760C8 /* UIViewController+HFDynamicBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HFDynamicBar.h"; sourceTree = "<group>"; };
+		A73C5C571F3F18AD000760C8 /* UIViewController+HFDynamicBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HFDynamicBar.m"; sourceTree = "<group>"; };
+		A778E5771F3F110200811F76 /* iOS11_BigNavTitleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS11_BigNavTitleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A778E57A1F3F110200811F76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A778E57B1F3F110200811F76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A778E57D1F3F110200811F76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A778E57E1F3F110200811F76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A778E5811F3F110300811F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A778E5831F3F110300811F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A778E5861F3F110300811F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A778E5881F3F110300811F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A778E5891F3F110300811F76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A778E5911F3F125700811F76 /* iOS11_BigNavTitleDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS11_BigNavTitleDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A778E59E1F3F14C700811F76 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		A778E59F1F3F14C700811F76 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A778E5A11F3F14D600811F76 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A778E5A21F3F14D600811F76 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A778E5A41F3F14E200811F76 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		A778E5A51F3F14E200811F76 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		A778E5A71F3F1B5300811F76 /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		A778E5A81F3F1B5300811F76 /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A778E5741F3F110200811F76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C2223B0AD29990DC6F199D /* Pods_iOS11_BigNavTitleDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FB7E2D5CAA81D08A1878702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B6CAA856DEBBE9540301B8C /* Pods_iOS11_BigNavTitleDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A73C5C4C1F3F18AD000760C8 /* HFDynamicNav */ = {
+			isa = PBXGroup;
+			children = (
+				A73C5C531F3F18AD000760C8 /* Optional */,
+				A73C5C4D1F3F18AD000760C8 /* HFDynamicBigTitleView.h */,
+				A73C5C4E1F3F18AD000760C8 /* HFDynamicBigTitleView.m */,
+				A73C5C511F3F18AD000760C8 /* HFNormalNavView.h */,
+				A73C5C521F3F18AD000760C8 /* HFNormalNavView.m */,
+				A73C5C4F1F3F18AD000760C8 /* HFDynamicNavView.h */,
+				A73C5C501F3F18AD000760C8 /* HFDynamicNavView.m */,
+				A73C5C561F3F18AD000760C8 /* UIViewController+HFDynamicBar.h */,
+				A73C5C571F3F18AD000760C8 /* UIViewController+HFDynamicBar.m */,
+			);
+			path = HFDynamicNav;
+			sourceTree = "<group>";
+		};
+		A73C5C531F3F18AD000760C8 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				A73C5C541F3F18AD000760C8 /* UIView+GoAdd.h */,
+				A73C5C551F3F18AD000760C8 /* UIView+GoAdd.m */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		A778E56E1F3F110200811F76 = {
+			isa = PBXGroup;
+			children = (
+				A778E5791F3F110200811F76 /* iOS11_BigNavTitleDemo */,
+				A778E5781F3F110200811F76 /* Products */,
+				BF8A5A197E9E7185E6519E32 /* Pods */,
+				0FB7E2D5CAA81D08A1878702 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A778E5781F3F110200811F76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A778E5771F3F110200811F76 /* iOS11_BigNavTitleDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A778E5791F3F110200811F76 /* iOS11_BigNavTitleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A73C5C4C1F3F18AD000760C8 /* HFDynamicNav */,
+				A778E5AA1F3F1CCA00811F76 /* Page */,
+				A778E57A1F3F110200811F76 /* AppDelegate.h */,
+				A778E57B1F3F110200811F76 /* AppDelegate.m */,
+				A778E57D1F3F110200811F76 /* ViewController.h */,
+				A778E57E1F3F110200811F76 /* ViewController.m */,
+				A778E5801F3F110300811F76 /* Main.storyboard */,
+				A778E5831F3F110300811F76 /* Assets.xcassets */,
+				A778E5851F3F110300811F76 /* LaunchScreen.storyboard */,
+				A778E5881F3F110300811F76 /* Info.plist */,
+				A778E5891F3F110300811F76 /* main.m */,
+				A778E5911F3F125700811F76 /* iOS11_BigNavTitleDemo-Prefix.pch */,
+			);
+			path = iOS11_BigNavTitleDemo;
+			sourceTree = "<group>";
+		};
+		A778E5AA1F3F1CCA00811F76 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				A778E59E1F3F14C700811F76 /* FirstViewController.h */,
+				A778E59F1F3F14C700811F76 /* FirstViewController.m */,
+				A778E5A11F3F14D600811F76 /* SecondViewController.h */,
+				A778E5A21F3F14D600811F76 /* SecondViewController.m */,
+				A778E5A41F3F14E200811F76 /* ThirdViewController.h */,
+				A778E5A51F3F14E200811F76 /* ThirdViewController.m */,
+				A778E5A71F3F1B5300811F76 /* FourViewController.h */,
+				A778E5A81F3F1B5300811F76 /* FourViewController.m */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		BF8A5A197E9E7185E6519E32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D053D35E64659891A53F9D /* Pods-iOS11_BigNavTitleDemo.debug.xcconfig */,
+				0FC095EFCBC5FC0B95DC8AD6 /* Pods-iOS11_BigNavTitleDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A778E5761F3F110200811F76 /* iOS11_BigNavTitleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A778E58D1F3F110300811F76 /* Build configuration list for PBXNativeTarget "iOS11_BigNavTitleDemo" */;
+			buildPhases = (
+				697BBB4E8F99C084F893A3F5 /* [CP] Check Pods Manifest.lock */,
+				A778E5731F3F110200811F76 /* Sources */,
+				A778E5741F3F110200811F76 /* Frameworks */,
+				A778E5751F3F110200811F76 /* Resources */,
+				32843B4B8D44DC49502FF508 /* [CP] Embed Pods Frameworks */,
+				FC8C8DCBF56E4CDECE7C9C7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS11_BigNavTitleDemo;
+			productName = iOS11_BigNavTitleDemo;
+			productReference = A778E5771F3F110200811F76 /* iOS11_BigNavTitleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A778E56F1F3F110200811F76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "HF-Liqun";
+				TargetAttributes = {
+					A778E5761F3F110200811F76 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = A778E5721F3F110200811F76 /* Build configuration list for PBXProject "iOS11_BigNavTitleDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A778E56E1F3F110200811F76;
+			productRefGroup = A778E5781F3F110200811F76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A778E5761F3F110200811F76 /* iOS11_BigNavTitleDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A778E5751F3F110200811F76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778E5871F3F110300811F76 /* LaunchScreen.storyboard in Resources */,
+				A778E5841F3F110300811F76 /* Assets.xcassets in Resources */,
+				A778E5821F3F110300811F76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32843B4B8D44DC49502FF508 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS11_BigNavTitleDemo/Pods-iOS11_BigNavTitleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		697BBB4E8F99C084F893A3F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8C8DCBF56E4CDECE7C9C7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS11_BigNavTitleDemo/Pods-iOS11_BigNavTitleDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A778E5731F3F110200811F76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A73C5C591F3F18AD000760C8 /* HFDynamicNavView.m in Sources */,
+				A778E5A31F3F14D600811F76 /* SecondViewController.m in Sources */,
+				A778E57F1F3F110200811F76 /* ViewController.m in Sources */,
+				A778E5A61F3F14E200811F76 /* ThirdViewController.m in Sources */,
+				A778E58A1F3F110300811F76 /* main.m in Sources */,
+				A73C5C5A1F3F18AD000760C8 /* HFNormalNavView.m in Sources */,
+				A778E5A91F3F1B5300811F76 /* FourViewController.m in Sources */,
+				A778E57C1F3F110200811F76 /* AppDelegate.m in Sources */,
+				A73C5C581F3F18AD000760C8 /* HFDynamicBigTitleView.m in Sources */,
+				A73C5C5C1F3F18AD000760C8 /* UIViewController+HFDynamicBar.m in Sources */,
+				A73C5C5B1F3F18AD000760C8 /* UIView+GoAdd.m in Sources */,
+				A778E5A01F3F14C700811F76 /* FirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A778E5801F3F110300811F76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A778E5811F3F110300811F76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A778E5851F3F110300811F76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A778E5861F3F110300811F76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A778E58B1F3F110300811F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A778E58C1F3F110300811F76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A778E58E1F3F110300811F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D053D35E64659891A53F9D /* Pods-iOS11_BigNavTitleDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LR8V7G449B;
+				GCC_PREFIX_HEADER = "iOS11_BigNavTitleDemo/iOS11_BigNavTitleDemo-Prefix.pch";
+				INFOPLIST_FILE = iOS11_BigNavTitleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dailylife.iOS11-BigNavTitleDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A778E58F1F3F110300811F76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC095EFCBC5FC0B95DC8AD6 /* Pods-iOS11_BigNavTitleDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LR8V7G449B;
+				GCC_PREFIX_HEADER = "iOS11_BigNavTitleDemo/iOS11_BigNavTitleDemo-Prefix.pch";
+				INFOPLIST_FILE = iOS11_BigNavTitleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dailylife.iOS11-BigNavTitleDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A778E5721F3F110200811F76 /* Build configuration list for PBXProject "iOS11_BigNavTitleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778E58B1F3F110300811F76 /* Debug */,
+				A778E58C1F3F110300811F76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A778E58D1F3F110300811F76 /* Build configuration list for PBXNativeTarget "iOS11_BigNavTitleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778E58E1F3F110300811F76 /* Debug */,
+				A778E58F1F3F110300811F76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A778E56F1F3F110200811F76 /* Project object */;
+}
