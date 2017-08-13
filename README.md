@@ -8,11 +8,13 @@ iOS11全面应用大标题设计,（岂止于大—— 比逼格更逼格！）b
 > *  iOS 11标题设计的大且粗，把醒目优先级提到了最高
 > *  明确整个page核心，结构更明朗，让用户减少疑惑
 很多设计师把Apple、google或者微软的用户界面标准奉若神明，觉得只要是他们说的，都是对的 好看不好看，我相信必定还会引起国内的国产手机UI设计追“大苹果风”。
+
+
 如果你们的设计师也已经开始设计了这种大标题导航的UI,并且让你适配到iOS11以下的iOS10 iOS9 iOS8 那么特别希望 我写的 这个小demo 能够帮到你，毕竟维护自家产品一般不可能只限制用户用iOS11系统吧。。。
 
 效果图是这样的：
 
- ![image]( https://github.com/Li-Qun/iOS11_BigNavigationBarTitle/blob/master/iOS11_BigNavTitleDemo/show.gif )
+ ![image]( https://github.com/Li-Qun/iOS11_BigNavigationBarTitle/blob/master/iOS11_BigNavTitleDemo/show2.gif)
  
  为了使用方便，本人特意写了类别方法 UIViewController+HFDynamicBar.h
  
