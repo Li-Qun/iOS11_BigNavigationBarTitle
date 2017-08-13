@@ -33,11 +33,12 @@
     self.view.clipsToBounds = YES;
     self.title = @"Setting";
     
-
+    [self defaultShowDynamicNav];//导航大标题展示  【1】放在tableView 的上层
+    
     tableView = [[UITableView alloc]init];
     [self.view addSubview:tableView];
+    [self.view addSubview:self.dynamicNavView];
     
-    [self defaultShowDynamicNav];//导航大标题展示  【1】放在tableView 的上层
     [self.dynamicNavView.navView.backButton setHidden:YES];
     
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -47,6 +48,8 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.contentInset = UIEdgeInsetsMake(self.dynamicNavView.bigTitleView.hf_height, 0, 0, 0);////这行代码必须有 【3】为了连贯联动效果
+    [tableView setContentOffset:CGPointMake(self.view.hf_width, - self.dynamicNavView.bigTitleView.hf_height) animated:NO];////这行代码必须有 【4】为了连贯联动效果
+    [tableView reloadData];
     
 }
 
@@ -59,7 +62,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-    return 20;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -107,7 +110,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //下面代码选择实现 需要导航折叠Animation 就要在该代理方法里面实现 不滚动就是默认大标题 【4】选择性实现
+    //下面代码选择实现 需要导航折叠Animation 就要在该代理方法里面实现 不滚动就是默认大标题 【5】选择性实现
     ////
     [self showDynamicBarAnimationWithScrollView:scrollView];
     ///

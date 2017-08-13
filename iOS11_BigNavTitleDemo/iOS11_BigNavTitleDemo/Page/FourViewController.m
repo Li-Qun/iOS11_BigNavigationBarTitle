@@ -38,7 +38,7 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.contentInset = UIEdgeInsetsMake(self.dynamicNavView.bigTitleView.hf_height, 0, 0, 0);////这行代码必须有 【3】为了连贯联动效果
-    
+    [tableView setContentOffset:CGPointMake(self.view.hf_width, - self.dynamicNavView.bigTitleView.hf_height) animated:NO];////这行代码必须有 【4】为了连贯联动效果
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +50,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-    return 5;
+    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -64,7 +64,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //下面代码选择实现 需要导航折叠Animation 就要在该代理方法里面实现 不滚动就是默认大标题 【4】选择性实现
+    //下面代码选择实现 需要导航折叠Animation 就要在该代理方法里面实现 不滚动就是默认大标题 【5】选择性实现
     ////
     [self showDynamicBarAnimationWithScrollView:scrollView];
     ///

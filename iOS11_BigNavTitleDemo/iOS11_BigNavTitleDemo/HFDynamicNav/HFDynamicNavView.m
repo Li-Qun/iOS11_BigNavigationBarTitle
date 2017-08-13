@@ -44,6 +44,8 @@
 
 - (void)configSubviews
 {
+    self.backgroundColor = [UIColor whiteColor];
+    
     [self addSubview:self.navView];
     [self insertSubview:self.bigTitleView belowSubview:self.navView];
     
@@ -77,7 +79,7 @@
                 smallTitleAlpha = 1;
             }
         } else {
-            bigTitleTop = headViewNormalHeight - 49;
+            bigTitleTop = headViewNormalHeight - 50;
             smallTitleAlpha = 1;
         }
     } else {
