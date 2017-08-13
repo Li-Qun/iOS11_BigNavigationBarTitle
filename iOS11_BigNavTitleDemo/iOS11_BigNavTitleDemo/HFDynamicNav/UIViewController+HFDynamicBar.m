@@ -29,6 +29,7 @@
     }
     [self.dynamicNavView setBackButtonTitle:backTitle];
     [self.dynamicNavView.navView.backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.dynamicNavView.navView setNavViewAlpha:0];
 }
 
 #pragma mark - 展示滚动animation

@@ -12,7 +12,7 @@ iOS11全面应用大标题设计,（岂止于大—— 比逼格更逼格！）b
 
 效果图是这样的：
 
- ![image](  iOS11_BigNavigationBarTitle/iOS11_BigNavTitleDemo/show.gif )
+ ![image]( https://github.com/Li-Qun/iOS11_BigNavigationBarTitle/blob/master/iOS11_BigNavTitleDemo/show.gif )
  
  为了使用方便，本人特意写了类别方法 UIViewController+HFDynamicBar.h
  
