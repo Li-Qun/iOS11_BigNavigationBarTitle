@@ -21,11 +21,9 @@
     [self.dynamicNavView setTitle:self.title];
     //设置 返回按钮标题
     NSString *backTitle = @"返回";
-    if (self.navigationController.viewControllers.count > 1) {
-        UIViewController *vc  = self.navigationController.viewControllers[self.navigationController.viewControllers.count - 2];
-        if (vc.title) {
-            backTitle = vc.title;
-        }
+    NSString *showBackTitle = [UINavigationBar appearance].backItem.title;
+    if (showBackTitle) {
+        backTitle = showBackTitle;
     }
     [self.dynamicNavView setBackButtonTitle:backTitle];
     [self.dynamicNavView.navView.backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];

@@ -33,6 +33,16 @@
 
 - (void)setNavigatonBarAppear {
     [UINavigationBar appearance].translucent = NO;
+    //导航相关字体颜色设置
+    UIFont *font = [UIFont boldSystemFontOfSize:16.0];
+    NSDictionary *textAttributes = @{
+                                     NSFontAttributeName : font,
+                                     NSForegroundColorAttributeName : [UIColor blackColor]
+                                     };
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];//修改字体颜色及字体大小
+    UIColor *mainColor = [UIColor colorWithRed:1.00f green:0.49f blue:0.59f alpha:1.00f];
+    [[UINavigationBar appearance] setTintColor:mainColor];//导航键颜色
 }
 
 
