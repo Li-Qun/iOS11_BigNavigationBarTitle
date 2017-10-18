@@ -11,6 +11,8 @@
 
 @interface HFNormalNavView ()
 
+@property (nonatomic, assign) CGFloat statusBarHeight;
+
 @end
 
 @implementation HFNormalNavView
@@ -32,9 +34,11 @@
     [self addSubview:self.smallTitleLabel];
     [self addSubview:self.rightMenuView];
     
+    self.statusBarHeight = statusBar_height;
+    
     [self.backButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(7);
-        make.top.equalTo(self).offset(20);
+        make.top.equalTo(self).offset(self.statusBarHeight);
         make.width.greaterThanOrEqualTo(@(BackButtonWidth));
         make.height.equalTo(@(44));
     }];
@@ -82,8 +86,10 @@
 - (UIButton *)backButton
 {
     if (!_backButton) {
-        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_backButton setTitleColor:[UIColor colorWithRed:1.00f green:0.49f blue:0.59f alpha:1.00f] forState:UIControlStateNormal];
+        _backButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        UIColor *color = [UIColor colorWithRed:1.00f green:0.49f blue:0.59f alpha:1.00f];
+        [_backButton setTintColor:color];
+        [_backButton setTitleColor:color forState:UIControlStateNormal];
         [_backButton.titleLabel setFont:[UIFont systemFontOfSize:17]];
         [_backButton setImage:[UIImage imageNamed:@"icon_btn_back"] forState:UIControlStateNormal];
         [_backButton setTitle:@"返回" forState:UIControlStateNormal];

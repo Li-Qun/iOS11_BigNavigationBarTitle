@@ -12,6 +12,9 @@
 @interface HFDynamicNavView ()
 
 @property (nonatomic, assign) CGFloat defaultBackButtonTitleWidth;
+@property (nonatomic, assign) CGFloat statusBarHeight;
+@property (nonatomic, assign) CGFloat navViewTotalHeight;
+@property (nonatomic, assign) CGFloat bigTitleViewHeight;
 
 @end
 
@@ -44,6 +47,9 @@
 
 - (void)configSubviews
 {
+    self.statusBarHeight = statusBar_height;
+    self.navViewTotalHeight = statusBar_height + nav_normal_height + nav_expand_height;//(导航条 44 底部导航拓展部分 52)
+    self.bigTitleViewHeight = nav_expand_height - 1;
     self.backgroundColor = [UIColor whiteColor];
     
     [self addSubview:self.navView];
@@ -69,17 +75,17 @@
 
 - (void)dynamicNavViewAnimationWithYoffset:(CGFloat)yOffset
 {
-    CGFloat headViewNormalHeight = 20 + 44;
+    CGFloat headViewNormalHeight = self.statusBarHeight + nav_normal_height;
     CGFloat smallTitleAlpha = 0;
-    CGFloat bigTitleTop = 116 - 51;
+    CGFloat bigTitleTop = self.navViewTotalHeight - self.bigTitleViewHeight;
     if (yOffset > 0) { //折叠。。。
-        if (yOffset < 51) {
-            bigTitleTop = 116 - 50 - yOffset;
-            if (yOffset > 51 - 20) {
+        if (yOffset < self.bigTitleViewHeight) {
+            bigTitleTop = self.navViewTotalHeight - (self.bigTitleViewHeight - 1) - yOffset;
+            if (yOffset > self.bigTitleViewHeight - self.statusBarHeight) {
                 smallTitleAlpha = 1;
             }
         } else {
-            bigTitleTop = headViewNormalHeight - 50;
+            bigTitleTop = headViewNormalHeight - (self.bigTitleViewHeight - 1);
             smallTitleAlpha = 1;
         }
     } else {
@@ -87,7 +93,7 @@
     }
     [self.navView setNavViewAlpha:smallTitleAlpha];
      self.bigTitleView.hf_orgY = bigTitleTop;
-    self.hf_height = bigTitleTop + 51;
+    self.hf_height = bigTitleTop + self.bigTitleViewHeight;
 }
 
 #pragma mark - getter and setter
@@ -95,7 +101,7 @@
 - (HFNormalNavView *)navView
 {
     if (!_navView) {
-        _navView = [[HFNormalNavView alloc]initWithFrame:CGRectMake(0, 0, self.hf_width, 20 + 44)];
+        _navView = [[HFNormalNavView alloc]initWithFrame:CGRectMake(0, 0, self.hf_width, self.statusBarHeight + nav_normal_height)];
         [_navView.backButton setTitle:@"返回" forState:UIControlStateNormal];
         [_navView setBackgroundColor:[UIColor whiteColor]];
     }
@@ -105,7 +111,7 @@
 - (HFDynamicBigTitleView *)bigTitleView
 {
     if (!_bigTitleView) {
-        _bigTitleView = [[HFDynamicBigTitleView alloc]initWithFrame:CGRectMake(0, self.navView.hf_bottom, self.hf_width, 51)];
+        _bigTitleView = [[HFDynamicBigTitleView alloc]initWithFrame:CGRectMake(0, self.navView.hf_bottom, self.hf_width, self.bigTitleViewHeight)];
     }
     return _bigTitleView;
 }
