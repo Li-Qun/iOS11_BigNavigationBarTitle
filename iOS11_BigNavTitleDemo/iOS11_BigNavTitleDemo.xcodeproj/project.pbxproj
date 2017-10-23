@@ -436,7 +436,7 @@
 				DEVELOPMENT_TEAM = LR8V7G449B;
 				GCC_PREFIX_HEADER = "iOS11_BigNavTitleDemo/iOS11_BigNavTitleDemo-Prefix.pch";
 				INFOPLIST_FILE = iOS11_BigNavTitleDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dailylife.iOS11-BigNavTitleDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,7 +452,7 @@
 				DEVELOPMENT_TEAM = LR8V7G449B;
 				GCC_PREFIX_HEADER = "iOS11_BigNavTitleDemo/iOS11_BigNavTitleDemo-Prefix.pch";
 				INFOPLIST_FILE = iOS11_BigNavTitleDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dailylife.iOS11-BigNavTitleDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
